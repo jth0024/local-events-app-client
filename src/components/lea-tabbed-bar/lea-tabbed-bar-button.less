@@ -1,0 +1,30 @@
+@import (reference) '~styles/shared/index.less';
+
+@lea-tabbed-bar-button__color: @lea-color-text-inverted;
+@lea-tabbed-bar-button__color--active: @lea-color-text-active;
+@lea-tabbed-bar-button__max-width: 168px;
+
+.lea-tabbed-bar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: @lea-tabbed-bar-button__max-width;
+  color: @lea-tabbed-bar-button__color;
+  text-transform: capitalize;
+  &__link {
+    .leaLinkInverted();
+  }
+  &__link--active {
+    color: @lea-tabbed-bar-button__color--active;
+  }
+  &__link--active:hover {
+    color: @lea-tabbed-bar-button__color--active;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-use-before-define": [2, "nofunc"]
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  }
+}
